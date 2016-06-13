@@ -6,13 +6,18 @@ html, body {
     height: 100%;
 }
 
+
+
+
 h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 20px;
     text-align: center
 
 }
 
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 nav {
     position: fixed;
@@ -20,6 +25,20 @@ nav {
     height: 30px;
     background-color: rgba(0,0,0,.5);
     z-index: 99;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left: 30px;
+    font-family:'nordicahl';
+    line-height: 35px;
+    color: white;
+   
+}
+
+nav a:hover {
+    
+    color: grey;
 }
 
 .sect {
@@ -30,16 +49,19 @@ nav {
 }
 
 .subSection {
-    height: 50%;
+    height: 25%;
     background-color: black;
+
 }
 
 .sectOne {
     background-image: url("Images/image1blur.jpg");
+
+
 }
 
 .sectTwo {
-    background-color: black;
+    background-image: url("Images/image2blur.jpg");
 }
 
 .footer {
@@ -47,6 +69,7 @@ nav {
 }
 
 #title{
+    display: none;
     margin-top: 18%;
     color: black;
     font-family: 'nordicahl';
@@ -54,6 +77,49 @@ nav {
 
 }
 
+#overmij{
+    text-align: center;
+    color: white;
+    font-family: 'nordicahl';
+    font-size: 110px;
+
+
+}
+
+#bio {
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    font-family: 'nordicahl';
+    font-size: 20px;
+   
+    
+}
+
+ #biocontainer {
+    background-color: rgba(0,0,0,.5);
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
+    height: 80%;
+    margin-top: 5%;
+    margin-top: 5%;
+}
+
+
+.Center-Container {
+  position: relative;
+}
+
+.Absolute-Center {
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
 
 @font-face {
     font-family: 'nordicahl';
