@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zwoele poes</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css2.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<script src="scripts/imageMapResizer.min.js"></script>
+	i
+
+</head>
+<body>
+
+	<div id="wrapper" class="container">
+
+	<div class="row">
+		<div class="col-md-3"></div>
+
+			<div id="mainlogo" class="col-md-6">
+				<img src="pictures/logo.PNG" id="logo" alt="" usemap="#Map" width="550px" height="550px">
+
+					<map name="Map" id="Map">
+					    <area alt="" title="" href="#" shape="poly" coords="318,189,258,125,231,102,201,79,175,66,157,67,135,106,128,157,133,202,141,238,146,282,150,327,148,371,148,461,156,499,196,538,313,612,389,653,433,651,495,625,591,571,645,525,667,494,674,451,676,328,675,295,691,218,699,161,692,112,679,68,645,71,606,100,569,138,536,187,500,202,421,180,403,179" />
+					</map>
+			</div>
+
+		<div class="col-md-3"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-2"></div>
+
+		<div class="col-md-3">
+			<div id="Danny"></div>
+		</div>
+
+		<div class="col-md-2"></div>
+
+		<div class="col-md-3">
+			<div id="Niels"></div>
+		</div>
+
+		<div class="col-md-2"></div>
+	</div>
+
+
+	</div>
+
+	<script>
+
+
+
+		$(function(){
+			$('#Map').imageMapResize();
+			$('#logo').hide().fadeIn(2000);
+			$('#danny').hide().delay(1800).fadeIn(1500);
+			$('#niels').hide().delay(1800).fadeIn(1500);
+
+		});
+
+		$('#danny , #niels').mouseenter(function(event){
+		    $(event.target).animate({height:'280px'}, { duration: 200, queue: false });
+		    $(event.target).animate({width:'280px'}, { duration: 200, queue: false });
+		    $(event.target).animate({fontSize:'130px'}, { duration: 200, queue: false });
+		    $(event.target).animate({lineHeight:'265px'}, { duration: 200, queue: false });
+		});
+
+		$('#danny , #niels').mouseleave(function(event){
+		    $(event.target).animate({height:'250px'}, { duration: 200, queue: false });
+		    $(event.target).animate({width:'250px'}, { duration: 200, queue: false });
+		    $(event.target).animate({fontSize:'100px'}, { duration: 200, queue: false });
+		    $(event.target).animate({lineHeight:'250px'}, { duration: 200, queue: false });
+		});
+
+		$('#wrapper').click(function(event){
+		    $('#logo').show();
+			$('#danny').show();
+			$('#niels').show();
+		});
+
+
+
+	</script>
+
+</body>
+</html>
