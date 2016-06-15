@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Danny's site</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="dannycss.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<script src="scripts/imageMapResizer.min.js"></script>
+
+</head>
+	<body>
+
+	<div id="navbar">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a href="">Over</a></li>
+			<li><a href="">Login</a></li>
+		</ul>
+	</div>
+
+		<div id="wrapper">
+
+			<div class="onexfive">
+				<h1>Danny Huigen</h1>
+			</div>
+
+
+			
+			<a href="https://www.facebook.com/danny.huigen"><div id="fb" class="onexone">
+				<img src="icons/fb2.png" width="128px" height="128px">
+			</div></a>
+
+			<a href=""><div class="onextwo">
+				<div class="fixblockleft">
+					<img src="icons/werk.png" width="128px" height="128px">
+				</div>
+				<div class="fixblockright">
+					<p>Werk ervaring</p>
+				</div>
+			</div></a>
+
+			<a href="http://www.zwoelepoes.nl"><div class="onexone">
+				<img src="icons/home.png" width="128px" height="128px">
+			</div></a>
+
+			<a href=""><div class="twoxoner">
+				<div class="fixblocktop">
+					<img src="icons/school.png" width="128px" height="128px">
+				</div>
+				<div class="fixblockbot">
+					<p>School & Diplomas</p>
+				</div>
+			</div></a>
+
+			<a href="https://github.com/link3321"><div class="onexoner">
+				<img src="icons/github.png" width="128px" height="128px">
+			</div></a>
+
+
+			<a href=""><div class="twoxtwo">
+				<img src="icons/me.png" width="256px" height="256px">
+			</div></a>
+
+			<a href=""><div class="onexone">
+				<img src="icons/cv2.png" width="128px" height="128px">
+			</div></a>
+
+			<a href=""><div class="onextwo">
+				<div class="fixblockleft">
+					<img src="icons/projecten.png" width="128px" height="128px">
+				</div>
+				<div class="fixblockright">
+					<p>Projecten</p>
+				</div>
+			</div></a>
+
+			<a href="https://www.instagram.com/dannyylink/"><div class="onexone">
+				<img src="icons/insta.png" width="128px" height="128px">
+			</div></a>
+			
+
+		</div>
+
+	</body>
+</html>
+
+	<script>
+
+		$('.onexone , .onextwo , .onexoner , .twoxtwo ,.twoxoner').mouseenter(function(event){
+		    $(this).css("background-color","rgba(0,200,200,0.5)");
+		    $(this).animate({
+			    borderTopLeftRadius: 25, 
+			    borderTopRightRadius: 25, 
+			    borderBottomLeftRadius: 25, 
+			    borderBottomRightRadius: 25}, { duration: 200, queue: false });
+		    $(this).find('img').animate({height:'158px'}, { duration: 200, queue: false });
+		    $(this).find('img').animate({width:'158px'}, { duration: 200, queue: false });
+		    $(this).find('p').animate({fontSize:'35px'}, { duration: 200, queue: false });
+		});
+
+		$('.onexone , .onextwo , .onexoner , .twoxtwo ,.twoxoner').mouseleave(function(event){
+		    $(this).css("background-color","rgba(0,0,0,0.5)");
+		    $(this).animate({
+			    borderTopLeftRadius: 0, 
+			    borderTopRightRadius: 0, 
+			    borderBottomLeftRadius: 0, 
+			    borderBottomRightRadius: 0}, { duration: 200, queue: false });
+		    $(this).find('img').animate({height:'128px'}, { duration: 200, queue: false });
+		    $(this).find('img').animate({width:'128px'}, { duration: 200, queue: false });
+		    $(this).find('p').animate({fontSize:'30px'}, { duration: 200, queue: false });
+		});
+
+
+
+		$('.twoxtwo').mouseenter(function(event){
+		    $(this).css("background-color","rgba(0,200,200,0.5)");
+		    $(this).animate({
+			    borderTopLeftRadius: 25, 
+			    borderTopRightRadius: 25, 
+			    borderBottomLeftRadius: 25, 
+			    borderBottomRightRadius: 25}, { duration: 200, queue: false });
+		    $(this).find('img').animate({height:'306px'}, { duration: 200, queue: false });
+		    $(this).find('img').animate({width:'306px'}, { duration: 200, queue: false });
+		    $(this).find('p').animate({fontSize:'35px'}, { duration: 200, queue: false });
+		});
+
+		$('.twoxtwo').mouseleave(function(event){
+		    $(this).css("background-color","rgba(0,0,0,0.5)");
+		    $(this).animate({
+			    borderTopLeftRadius: 0, 
+			    borderTopRightRadius: 0, 
+			    borderBottomLeftRadius: 0, 
+			    borderBottomRightRadius: 0}, { duration: 200, queue: false });
+		    $(this).find('img').animate({height:'256px'}, { duration: 200, queue: false });
+		    $(this).find('img').animate({width:'256px'}, { duration: 200, queue: false });
+		    $(this).find('p').animate({fontSize:'30px'}, { duration: 200, queue: false });
+		});
+
+
+		
+
+
+	</script>
+
