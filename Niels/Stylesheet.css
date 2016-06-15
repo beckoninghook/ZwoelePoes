@@ -36,6 +36,13 @@ nav a{
    
 }
 
+
+#logo-hoofd{
+   display: none;
+   height: 250px;
+    width: 250px;
+}
+
 nav a:hover {
     
     color: grey;
@@ -53,11 +60,16 @@ nav a:hover {
     bottom: 0;
 }
 
+.uilfoto {
+    margin-top: 80%;
+}
+
 #uil{
-    height: 460px;
-    width: 500px;
-    display: block;
-    margin: 0 auto;
+    display: none;
+    height: 230px;
+    width: 250px;
+    
+   
     vertical-align: baseline;
 
 }
@@ -83,6 +95,14 @@ nav a:hover {
 
 .sectTwo {
     background-image: url("Images/image2blur.jpg");
+}
+
+.sectThree {
+    background-image: url("Images/image3blur.png");
+}
+
+.sectFour {
+    background-color: #7DE6C3;
 }
 
 .footer {
@@ -113,7 +133,6 @@ nav a:hover {
 
 #bio {
     padding: 20px;
-    margin-top: 5%;
     margin-bottom: 5%;
     color: white;
     font-family: 'nordicahl';
@@ -127,14 +146,15 @@ nav a:hover {
     margin-right: 20%;
     margin-left: 20%;
     text-align: center;
-    height: 80%;
-    margin-top: 5%;
-    margin-top: 5%;
     margin: auto;
     width: 750px;
-    height: 650px;
+    height: 100%;
 }
 
+.footer{
+    padding-top: 10px;
+    height: 120px;
+}
 
 .Center-Container {
   position: relative;
@@ -152,4 +172,85 @@ nav a:hover {
 @font-face {
     font-family: 'nordicahl';
     src: url('fonts/NordicaHairline.otf') format('truetype');
+}
+
+.centertable {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer p{
+    color: white;
+    font-family: 'nordicahl';
+}
+
+.Absolute-Center-title {
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#gallery{
+    margin-top: 5%;
+    background-color: rgba(0,0,0,.5);
+}
+
+
+#gallery img {    
+    margin: auto;
+    height:180px;
+    width: 180px;
+}
+
+ .fix{
+    position:fixed;
+    bottom:0px;
+    }
+
+.centerhoofd {
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poppetje {
+    position: relative;
+    height: 100%;
+    width: 300px;
+    float: left;
+}
+
+.poppetje img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 603px;
+    width:  448px;
+   }
+
+div#load_screen{
+    background: #66ceff;
+    opacity: 1;
+    position: fixed;
+    z-index:10;
+    top: 0px;
+    width: 100%;
+    height: 1600px;
+}
+div#load_screen > div#loading{
+    color:#66ceff;
+    margin-left: auto;
+   margin-right: auto;
+}
+
+#loadcat{
+        margin-top: 15%;
+    margin-left: 25%;
+   width: 800px;
+   height: 400px;
+
 }

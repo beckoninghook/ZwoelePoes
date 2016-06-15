@@ -2,42 +2,63 @@
 <html>
 <head>
 <title>Niels</title>
+<link href="lbcss/lightbox.css" rel="stylesheet">
 <link  href="Stylesheet.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+	
+<div id="load_screen"><div id="loading">
+<img id="loadcat" src="Images/calmcat.gif">
+</div></div>
+<script>
+window.addEventListener("load", function(){
+	var load_screen = document.getElementById("load_screen");
+	document.body.removeChild(load_screen);
+});
+
+</script>
     <nav>
-    	<a href="#">Home</a>
-    	<a href="#">Over mij</a>
-    	<a href="#">portfolio</a>
-    	<a href="#">Contact</a>
+    	<a id="home" href="#homeSection">Home</a>
+    	<a id="overmij" href="#overmijSection">Over mij</a>
+    	<a id="portfolio" href="#portfolioSection">portfolio</a>
+    	
     </nav>
     <div></div>
-    <div class="sect sectOne ">
+    <div id="homeSection" class="sect sectOne ">
         <div class="Center-Container div-wrapper">
         <br />
         	<div class="title">
-        		<p id="titlemain" class="Absolute-Center">Niels van Oeffel</p>
+        		<p id="titlemain" class="Absolute-Center-title">Niels van Oeffel</p>
         	</div>
         </div>
-        <div class="uilfoto">
-        	<img id="uil" src="Images/uiltje.png" alt="uil" align="middle">
+        <div class="centerhoofd">
+            <img src="Images/hoofd.png" id="logo-hoofd" class="fix">
         </div>
     </div>
-    <div class="subSection Center-Container">
+
+    <div id="overmijSection" class="subSection Center-Container">
     	<br />
     	<p class="Absolute-Center titles">Over Mij</p>
     </div>
 
     <div class="sect sectTwo">
-    	<br />
+   			<div class="poppetje">
+    			<img src="Images/aysickman.png">
+    		</div>
+
     		<div id="biocontainer">
     			<p id="bio">
-    				Hey! ik zal me even voorstellen,
-    				<br/> ik ben Niels van Oeffel, 16 jaar oud, ik doe de opleiding MBO ICT Applicatie Ontwikkelaar op het Regio College Zaandam en ik ben bijna klaar met me eerste jaar. Ik heb geleerd te werken met de programeer talen: C#, HTML, CSS en ASP.NET. Verder doe ik in me vrije tijd aan volleybal, tekenen en longboarden en maak daarvoor ook nog videos voor op me youtube kanaal Le'Moose.
+    				<br />
+    				<br />
+    				Hey!
+    				<br/>
+    				 Ik zal me even voorstellen,
+    				<br/> 
+    				ik ben Niels van Oeffel, 16 jaar oud en ik doe de opleiding MBO ICT Applicatie Ontwikkelaar op het Regio College Zaandam. Ik ben bijna klaar met me eerste jaar en heb geleerd te programmeren in: C#, HTML, CSS en ASP.NET. Verder doe ik in me vrije tijd aan volleybal, tekenen en longboarden en maak daarvoor ook nog videos op mijn Youtube kanaal Le'Moose.
     				<br/> 
     				<br/>
-    				Dus je kan wel stellen dat ik creatief ben en er van hou om in een team samen te werken. Ik bezit deze website samen met een goede vriend: Danny huigen. We zijn nu al zo een 10 jaar bevriend en gaan samen naar de zelfde opleiding. We zijn Zwoelepoes begonnen omdat we niks te doen hadden op onze vrijdag avond en dachten waarom niet. Verder ben ik op dit moment bezig met een school project die je kan volgen op github, het is een soort tamagotchi maar in plaats van een aziatisch alientje heb je keuze uit 3 verschillende vogels. Je kan meer informatie vinden over Stymph in me portfolio waar je onder andere ook tekeningen van me kan zien en andere applicaties die ik heb gemaakt. Verder valt er niet zoveel over mezelf meer te zeggen dus ik zou zeggen neem maar een kijkje in me portfolio! 
+    				Dus je kan wel stellen dat ik creatief ben en er van hou om in een team samen te werken. Ik bezit deze website samen met een goede vriend: Danny huigen. We zijn nu al zo een 10 jaar bevriend en gaan samen naar de zelfde opleiding. We zijn Zwoelepoes begonnen omdat we niks te doen hadden op onze vrijdag avond en dachten waarom niet. Verder ben ik op dit moment bezig met een school project die je kan volgen op Github, het is een soort tamagotchi maar in plaats van een Aziatisch alientje heb je keuze uit 3 verschillende vogels. Je kan meer informatie vinden over Stymph in me portfolio waar je onder andere ook tekeningen kan zien en andere applicaties die ik heb gemaakt. Verder valt er niet meer zoveel over mezelf te zeggen dus ik zou zeggen neem maar een kijkje in me portfolio! 
     				<br/>
     				<br/>
     				Groetjes,
@@ -45,24 +66,50 @@
     				<br/>
     				Niels van Oeffel
     			</p>
+    			
     		</div>
+    		
     </div>
 
-    <div class="subSection footer Center-Container">
+    <div id="portfolioSection" class="subSection Center-Container">
     	<p class="Absolute-Center titles">Portfolio</p>
     </div>
 
     <div class="sect sectThree Center-Container">
-    	
+        <br/>
+	    <div id="gallery" align="center">
+	    	<img src="Images/gal1.jpg">
+	    	<img src="Images/gal2.png">
+	    	<img src="Images/gal3.jpg">
+	    	<br />
+	    	<img src="Images/gal4.png">
+	    	<img src="Images/gal5.jpg">
+	    	<img src="Images/gal6.jpg">
+	    	<br />
+	    	<img src="Images/gal7.png">
+	    	<img src="Images/gal8.jpg">
+	    	<img src="Images/gal9.png">
+
+	    </div>
     </div>
 
+    
     <div class="subSection footer Center-Container">
     	
+        <p>Handcrafted in Koog aan de Zaan</p>
+          
+        <p>Developed by Niels van Oeffel</p>
+            <div align="center">           
+                    	<a href="https://www.instagram.com/nielsligtopbed/" target="_blank"><img width="30" height="30" src="Images/download.png" />
+                    	<a href="https://www.facebook.com/niels.vanoeffel" target="_blank"><img width="30" height="30" src="Images/facebook-logo-white.png" />
+                    	<a href="https://www.youtube.com/user/epiclivestyle" target="_blank"><img width="30" height="30"  src="Images/YouTube_light_color_icon.png" />
+        	</div>
     </div>
 
-	
+
 <script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/lightbox.js"></script>
    
 </body>
 
