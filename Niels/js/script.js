@@ -1,13 +1,14 @@
 $(document).ready(function () {
     $('.title').fadeIn(2000);
+    setBindings();
 });
 
 $(document).ready(function () {
-    $('.uilfoto').fadeIn(2000);
+    $('#logo-hoofd').fadeIn(2000);
 });
 
 
-var divs = $('.uilfoto,.title');
+var divs = $('#logo-hoofd,.title');
 $(window).scroll(function(){
    if($(window).scrollTop()<10){
          divs.fadeIn(500);
@@ -16,8 +17,14 @@ $(window).scroll(function(){
    }
 });
 
-$('#logo-hoofd').hover(function(){
-    $(this).css({width:"300px",height:"300px"});
-},function(){
-    $(this).css({width:"250px",height:"250px"});   
-});
+
+function setBindings() {
+		$("nav a").click(function(e){
+			e.preventDefault();
+			var sectionID = e.currentTarget.id + "Section";
+
+		$("html body").animate({
+			scrollTop:$("#" + sectionID).offset().top
+		}, 1000)
+	})
+}

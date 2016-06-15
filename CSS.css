@@ -1,15 +1,27 @@
+<<<<<<< HEAD
 html, body{
 	margin: 0px;
 	padding: 0px;
 
 	background: url(pictures/bg.JPG) no-repeat center center fixed;
+=======
+
+
+html, body{
+	background: url("piccas/bg.jpg") no-repeat center center fixed;
+>>>>>>> origin/master
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
     background-size: cover;         /* Generic*/
 
 	width: 100%;
+<<<<<<< HEAD
 	
+=======
+	margin: 0px;
+	padding: 0px;
+>>>>>>> origin/master
 	height: 98%;
 }
 
