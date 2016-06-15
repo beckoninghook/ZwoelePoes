@@ -27,7 +27,7 @@
 
 			<div id="middle" class="col-md-4">
 				
-				<img src="piccas/logo.PNG" id="logo" alt="" usemap="#Map" />
+				<img src="pictures/logo.PNG" id="logo" alt="" usemap="#Map" />
 
 				<map name="Map" id="Map">
 				    <area alt="" title="" href="#" shape="poly" coords="318,189,258,125,231,102,201,79,175,66,157,67,135,106,128,157,133,202,141,238,146,282,150,327,148,371,148,461,156,499,196,538,313,612,389,653,433,651,495,625,591,571,645,525,667,494,674,451,676,328,675,295,691,218,699,161,692,112,679,68,645,71,606,100,569,138,536,187,500,202,421,180,403,179" />
@@ -71,6 +71,13 @@
 		    $(event.target).animate({width:'250px'}, { duration: 200, queue: false });
 		    $(event.target).animate({fontSize:'100px'}, { duration: 200, queue: false });
 		    $(event.target).animate({lineHeight:'250px'}, { duration: 200, queue: false });
+		    //this method increases the height to 72px
+		});
+
+		$('#wrapper').click(function(event){
+		    $('#logo').show();
+			$('#danny').show();
+			$('#niels').show();
 		    //this method increases the height to 72px
 		});
 
