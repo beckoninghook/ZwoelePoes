@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Danny's site</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<script src="scripts/imageMapResizer.min.js"></script>
+
+</head>
+	<body>
+		<div id="mainwrapper">
+			<h1>Danny Huigen</h1>
+		</div>
+
+		<div class="between">
+			<h2>About</h2>
+		</div>
+
+		<div id="boutwrapper">
+			<div id="contentwrapper">
+				gfdgfdg
+			</div>
+		</div>
+
+		<div class="between">
+			<div id="blockwrapper">
+
+			<div class="block">
+				<img src="icons/werk.png" width="128px" height="128px">
+			</div>
+
+				<div class="dblock">
+					<div class="fixblockl">
+						<img src="icons/projecten.png" width="128px" height="128px">
+					</div>
+					<div class="fixblockr" style="margin-top: 53px">
+						<p>Projecten</p>
+					</div>
+				</div>
+
+				<div class="dblock">
+					<div class="fixblockl">
+						<img src="icons/school.png" width="128px" height="128px">
+					</div>
+					<div class="fixblockr" style="margin-top: 32px">
+						<p>School &<br>Diplomas</p>
+					</div>
+				</div>
+
+				<div class="block">
+					<img src="icons/github.png" width="128px" height="128px">
+				</div>	
+			</div>
+		</div>
+
+	</body>
+</html>
+
+	<script>
+	$('.block , .dblock').mouseenter(function(event){
+		    $(this).css("background-color","rgb(10, 200, 255)");
+		    $(this).animate({
+			    borderTopLeftRadius: 25, 
+			    borderTopRightRadius: 25, 
+			    borderBottomLeftRadius: 25, 
+			    borderBottomRightRadius: 25}, { duration: 200, queue: false });
+		    $(this).find('img').animate({height:'145px'}, { duration: 200, queue: false });
+		    $(this).find('img').animate({width:'145px'}, { duration: 200, queue: false });
+		});
+
+		$('.block , .dblock').mouseleave(function(event){
+		    $(this).css("background-color","rgb(51, 119, 255)");
+		    $(this).animate({
+			    borderTopLeftRadius: 0, 
+			    borderTopRightRadius: 0, 
+			    borderBottomLeftRadius: 0, 
+			    borderBottomRightRadius: 0}, { duration: 200, queue: false });
+		    $(this).find('img').animate({height:'128px'}, { duration: 200, queue: false });
+		    $(this).find('img').animate({width:'128px'}, { duration: 200, queue: false });
+		});
+	</script>
+
