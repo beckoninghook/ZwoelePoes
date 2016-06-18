@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  background-image: url("Images/ble_idlebg.gif"); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+div#load_screen{
+  background-image: url("Images/loadgif.gif");
+  opacity: 1;
+  position: fixed;
+  z-index:99;
+  top: 0px;
+  width: 100%;
+  height: 1600px;
+}
+
+div#load_screen > div#loading{
+  background-image: url("Images/loadgif.gif");
+  color:#66ceff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.nav {
+   top: 0;
+  left: 0;
+  Z-index: 26;
+  position: fixed;
+  font-family: pixel;
+  color: white;
+  height: 45px;
+  width: 100%;
+}
+
+.navbar {
+  height: 45px;
+  width: 100%;
+  position: relative;
+}
+
+.buttons {
+  width: 100%;
+  top: 7px;
+  position: absolute; 
+  text-align: center;
+}
+
+.buttons a{
+  text-decoration:none;
+  font-family:'pixel';
+  color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.buttons a:hover{
+  color: grey;
+}
+
+@font-face {
+  font-family: 'pixel';
+  src: url('fonts/Apple.ttf') format('truetype');
+}
+
+
+#homeSection {
+  display: none;
+  margin-left: 100%;
+  width: 660px;
+  height: 880px;
+  background-image: url("Images/textbg.png");
+  margin-right: 20%;
+  margin-top: 3%;
+  float: right;
+  background-repeat: no-repeat;
+}
+
+#intro {
+  font-size: 22px;
+  margin-top: 15%;
+  text-align: center;
+  font-family: 'pixel';
+  color: white;
+}
+
+#titlehome{
+  height:500px; 
+  width:500px;
+}
+
+#aboutSection {
+  margin-left: 100%;
+  display: none;
+  float: right;
+  margin-right: 14%;
+  background-image: url("Images/stone.png");
+  margin-top: 10%;
+  width: 900px;
+  height: 740px;
+  background-size: 100%;
+}
+
+
+#abouttext {
+    text-align: center;
+    margin-top: 8%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#abouttext h1{
+font-size: 40px;
+    font-family: 'pixel';
+    color: white;
+}
+
+#abouttext p{
+  margin-top: 2%;
+  font-size: 23px;
+  font-family: 'pixel';
+  color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#downloadSection {
+  margin-left: 100%;
+  background-image: url(Images/downloadbg.png);
+  margin-top: 10%;
+  width: 900px;
+  height: 740px;
+  background-size: 100%;
+  float: right;
+  margin-right: 14%;
+}
+
+
+#ei {
+
+  width: 265px;
+  margin: 0 auto; 
+}
+
+#ei img {
+   margin-top: 50%;
+}
+
+#textei p{
+    font-family: 'pixel';
+    text-align: center;
+    font-size: 27px;
+    margin-top: 8%;
+    color: white;
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<title>Stymph</title>
+<link  href="StyleStymph.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="Images/icon.ico" />
+</head>
+
+<body>
+	
+<div id="load_screen">
+<div id="loading">
+
+</div>
+</div>
+<script>
+window.addEventListener("load", function(){
+	var load_screen = document.getElementById("load_screen");
+	document.body.removeChild(load_screen);
+});
+</script>
+
+<div class="nav">
+     
+    <img class="navbar" src="Images/navbar.png">
+
+    <div class="buttons">
+        <a id="home" href="#homeSection">Home</a>
+        <a id="about" href="#aboutSection">About</a>
+        <a id="download" href="downloadSection">Download</a>
+        <a id="contact" href="contactSection">Contact</a> 
+    </div>
+</div>
+
+
+    <div id="homeSection">
+        <div id="intro">
+        <img id="titlehome" src="Images/title.png">
+            <p>
+            A work in progress game 
+            <br />
+            by
+            <br />
+            Niels van Oeffel
+            </p>
+        </div>
+    </div>
+
+
+    <div id="aboutSection">
+
+        <div id="abouttext">
+            <h1>About</h1>
+            <p>
+                Stymph is a game where you have the chance to take care of a creature straight out of the Greek mythology.
+                <br/>
+                A Stymphi is basically a Stymphalian bird but tamed by humans. If you dont know what a Stymphalian bird is I will try my best to explain it for you in three words : man eating bird. I dont think a bird could be more badass than that. So yeah you have the chance to take care of a man eating bird basically.
+            </p>
+        </div>
+       
+        
+    </div>
+
+    <div id="downloadSection">
+        <div id="ei">
+            <a href="">
+                <img src="Images/ei.png">
+            </a>
+            
+        </div>
+        <div id="textei">
+            <p>
+             Click the egg to download
+             <br />
+              the latest version of Stymph!
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/script.js"></script>
+   
+</body>
+
+</html>
